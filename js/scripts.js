@@ -8,8 +8,10 @@ $(document).ready(function(){
       console.log(array);
       for (var index = 0; index < sentence.length; index ++) {
         if (vowels.includes(splitWord[index])) {
-          splitWord.push("-");
-          console.log(splitWord);
+          array.push("-");
+          console.log(array);
+        } else {
+          array.push(splitWord[index]);
         }
         // console.log(splitWord[index]);
 
